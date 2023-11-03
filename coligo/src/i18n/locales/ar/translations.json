@@ -1,0 +1,21 @@
+{
+    "login":"تسجيل الدخول",
+    "logout":"تسجيل الخروج",
+    "home":"الرئيسية",
+    "dashboard":"الداشبورد",
+    "exam-time":"وقت الامتحان",
+    "view-exam-tips":"تعليمات الامتحان",
+    "whats-due":"ما الجديد",
+    "all":"الكل",
+    "announcement":"الاعلامات",
+    "welcome":"مرحبا ",
+    "courses":"كورس",
+    "grade-book":"سجل الدرجات",
+    "performance":"الاداء",
+    "schedule":"الجدوال",
+    "topic":"موضوع",
+    "start-quiz":"ابدا الكويز",
+    "solve-assignments":"حل الاسينمنت",
+    "search":"البحث",
+    "due-to":"اخر ميعاد"    
+}

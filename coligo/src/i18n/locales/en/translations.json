@@ -1,0 +1,21 @@
+{
+    "login":"Login",
+    "logout":"Logout",
+    "home":"Home",
+    "dashboard":"DashBoard",
+    "exam-time":"Exam Time",
+    "view-exam-tips":"View exams tips",
+    "whats-due":"What's Due",
+    "all":"All",
+    "announcement":"Announcement",
+    "welcome":"Welcome",
+    "courses":"Courses",
+    "grade-book":"Gradebook",
+    "performance":"Perfomance",
+    "schedule":"Schedule",
+    "topic":"Topic",
+    "start-quiz":"Start Quiz",
+    "solve-assignments":"Solve Assignments",
+    "search":"Search",
+    "due-to":"Due To"
+}

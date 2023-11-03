@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .headerhover {
+        @apply px-2 h-[80%] flex items-center border border-transparent rounded-sm hover:border-white cursor-pointer duration-100;
+    }
+}
+
+*{
+    font-family: 'poppins, Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
