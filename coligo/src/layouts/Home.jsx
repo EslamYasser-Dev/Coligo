@@ -16,12 +16,14 @@ function requireAuth(Component) {
 
     if (!isLogged) {
       return (
-        <button
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => dispatch(handleLogin())}
-        >
-          Login
-        </button>
+        <div className="flex justify-center items-center h-screen">
+          <button
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            onClick={() => dispatch(handleLogin())}
+          >
+            Login
+          </button>
+        </div>
       );
     }
 
@@ -35,12 +37,11 @@ function HomeContent() {
 
   return (
     <div>
-      <nav className="flex justify-between items-center p-5 bg-white shadow-xl h-15">
-        <h1 className="text-3xl font-bold text-coligo_blue">Coligo</h1>
+      <nav className="fixed flex justify-between items-center p-5 bg-white shadow-xl h-15 min-w-full">
         <h2 className="text-xl">{t("welcome") + " " + "Eslam"} </h2>
         <div className="flex items-center space-x-4">
           <input
-            className="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-56 py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+            className="rounded-lg border-xl flex-1 appearance-none border border-gray-300 w-56 py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
             type="text"
             placeholder="Search"
           />
@@ -60,11 +61,13 @@ function HomeContent() {
       </nav>
       <div className="flex flex-row">
         <SideNav className="m-6" />
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-20">
           <Banner />
-          <QuizCard />
-          <Announcments/>
-                  </div>
+          <div className="mx-8 flex flex-col md:flex-row justify-content space-between md:space-x-4">
+            <Announcments className="md:w-1/2" />
+            <QuizCard className="md:w-1/2" />
+          </div>
+        </div>
       </div>
     </div>
   );

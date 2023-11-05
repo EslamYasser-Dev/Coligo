@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     isLogged:false,
+    isOpen:true,
 }
  export const authSlice = createSlice({
     name:'auth',
@@ -13,7 +14,7 @@ const initialState = {
 
         handleLogout:(state) => {
             state.isLogged = false;
-        }
+        },
     }
     
  });
